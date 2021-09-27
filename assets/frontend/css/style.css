@@ -1,0 +1,516 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.smart-search{position: absolute; width: 100%; background: white; height: 350px; overflow: scroll; z-index: 2; display: none;}
+.smart-search ul{padding: 0px; margin: 0px; list-style: none;}
+.smart-search ul li{border-bottom: 1px solid #dddddd; display: flex; justify-content: start; margin-top: 2px;}
+.smart-search ul li a{text-decoration: none; color: DarkCyan; font-style: normal; text-transform: lowercase;}
+.smart-search ul li a:hover{color: DarkGreen;}
+.smart-search img{width: 70px; margin-right: 5px;}
+
+.title{
+    color: white;
+}
+
+#logo{
+    font-size: 50px;
+    color: red;
+}
+
+#logo1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#key{
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+}
+
+#btnSearch{
+    width: 40px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 516px;
+}
+
+#social-network > div a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#cart{
+    font-size: 40px;   
+}
+
+.wrapper-mini-cart:hover .content-mini-cart{
+    display: block;
+}
+
+.content-mini-cart{
+    display: none;
+    letter-spacing: normal;
+    background: #ebebeb;
+    position: absolute;
+    top: 90px;
+    left: -100px;
+    width: 320px;
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    z-index: 1;
+}
+
+.clearfix{
+    max-height: 200px;
+}
+
+#menu{
+    background-color: #E60F1E;
+}
+
+.active{
+    background-color: #AF0F15;
+}
+
+#banner > div{
+    border-right: 1px solid white;
+}
+
+#cha{
+    position: relative;
+}
+
+#danhmuc{
+    position: absolute;
+    top: 28px;
+    left: -15px;
+    width: 285px;
+    background-color: #555555;
+}
+
+#danhmuc > li{
+    list-style-type: none;
+    border-bottom: 1px dashed white;
+    width: 100%;
+    display: inline-block;
+}
+
+#danhmuc > li:last-child{
+    border-bottom: none;
+}
+
+#danhmuc > li > a{
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    font-size: 13px;
+}
+
+#danhmuc > li > a:hover{
+    color: white;
+    background-color: #E60F1E;
+}
+
+li.menu1{
+    position: relative;
+}
+
+li.menu1:hover ul.menu1_2{
+    display: block;
+}
+
+ul.menu1_2{
+    display: none;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    width: 220px;
+    top: 0px;
+    left: 285px;
+    z-index: 1;
+}
+
+ul.menu1_2 li{
+    list-style: inside;
+    list-style-type: disc;
+    display: inline-block;
+    width: 100%;
+    margin-left: 10px;
+}
+
+ul.menu1_2 li a{
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+ul.menu1_2 li a:hover{
+    color: red;
+}
+
+#menu > .container{
+    position: relative;
+}
+
+#img_banner{
+    position: absolute;
+    top: 32px;
+    left: 300px;
+}
+
+#them{
+    height: 312px;
+}
+
+#tittle_dm{
+    margin: 8.5px 0;
+}
+
+#tittle_dm a{
+    border: 1px solid #D6232A;
+    background-color: #D6232A;
+    color: white;
+    text-decoration: none;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #D6232A;
+}
+
+.border-bot{
+    background-color: #F1F1F1;
+    border-bottom: 2px solid #D6232A;
+}
+
+ul.danhmuc_sp{
+    background-color: #E3E3E3;
+}
+
+ul.danhmuc_sp li{
+    list-style-type: none;
+}
+
+ul.danhmuc_sp li a{
+    color: #66668E;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+ul.danhmuc_sp li a:hover{
+    color: red;
+}
+
+.link-sp{
+    height: 95%;
+}
+
+.link-sp > div > a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.link-sp > div > a:hover{
+    color: red;
+}
+
+.old_price{
+    text-decoration: line-through;
+}
+
+.new_price{
+    color: red;
+}
+
+.footer{
+    background-color: #EEEEEE;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover{
+    color: red;
+}
+
+.footer ul li{
+    list-style-type: none;
+}
+
+img.sp{
+    transition: transform 4s;
+}
+
+img.sp:hover{
+    transform: scale(1.2);
+}
+
+.discount{
+    position: absolute; 
+    width: 50px; 
+    left: 180px;
+    line-height: 50px; 
+    text-align: center; 
+    background: red; 
+    color: white; 
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.btn_addToCart{
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+.user{
+	float: right;
+	margin-right: 25px;
+}
+
+.btn_account{
+	background-color: #ffffff;
+	color: #F36A5A;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4px;
+	padding: 5px;
+	border: unset;
+	position: relative;
+	cursor: pointer;
+}
+
+.btn_account:focus {
+	outline: unset;
+}
+
+.btn_account img{
+	width: 28px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.btn_account i{
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.btn_account .sub_menu{
+	position: absolute;
+	top: 40px;
+	background-color: white;
+	width: 200px;
+	right: 0;
+	z-index: 1;
+	border: 1px solid #cccccc;
+	padding: 0 15px;
+}
+
+.btn_account .sub_menu ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.btn_account .sub_menu ul li a{
+	display: block;
+	padding: 15px 0;
+	text-decoration: none;
+	color: #000000;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+}
+
+.btn_account .sub_menu ul li:last-child a{
+	border-bottom: 0;
+}
+
+.btn_account .sub_menu ul li a i{
+	font-size: 14px;
+	color: #272e36d9;
+	float: right;
+}
+
+.notification{
+	float: right;
+	margin-right: 25px;
+}
+
+.btn_notify{
+	background-color: #ffffff;
+	color: #F36A5A;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 8px;
+	padding: 5px;
+	border: unset;
+	position: relative;
+	cursor: pointer;
+}
+
+.btn_notify:focus {
+	outline: unset;
+}
+
+.btn_notify img{
+	width: 28px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.btn_notify i{
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.btn_notify .menu_notify{
+	position: absolute;
+	top: 40px;
+	background-color: white;
+	width: 200px;
+	right: 0;
+	z-index: 1;
+	border: 1px solid #cccccc;
+	padding: 0 15px;
+}
+
+.btn_notify .menu_notify ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.btn_notify .menu_notify ul li a{
+	display: block;
+	padding: 15px 0;
+	text-decoration: none;
+	color: #000000;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+}
+
+.btn_notify .menu_notify ul li:last-child a{
+	border-bottom: 0;
+}
+
+.btn_notify .menu_notify ul li a i{
+	font-size: 14px;
+	color: #272e36d9;
+	float: right;
+}
+
+.slideNews{
+    display: none;
+}
+
+.btn-change {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#next {
+    right: 10px;;
+}
+
+#prev {
+    left: 10px;
+}
+
+/* 4 button corresponding to 4 image */
+.change-img {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    #btnSearch{
+        top: 0px;
+        left: 200px;
+    }
+    #img_banner{
+        left: 255px;
+    }
+    #img_banner img{
+        width: 480px;
+        height: 216px;
+    }
+    #danhmuc{
+        width: 239px;
+    }
+    #them{
+        height: 200px;
+    }
+    .new_price, .old_price{
+        font-size: 13px;
+    }
+    .name_sp{
+        font-size: 10px !important;
+    }
+    .title_news{
+        font-size: 13px;
+    }
+    .desc_news{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    #btnSearch{
+        top: 0px;
+        left: 140px;
+    }
+    #img_banner{
+        left: 240px;
+    }
+    #img_banner img{
+        width: 315px;
+        height: 168px;
+    }
+    #danhmuc{
+        width: 224px;
+    }
+    #them{
+        height: 150px;
+    }
+    .new_price, .old_price{
+        font-size: 12px;
+    }
+    .danhmuc_sp{
+        display: none;
+    }
+    .name_sp{
+        font-size: 10px !important;
+    }
+    .title_news{
+        font-size: 13px;
+    }
+    .desc_news{
+        display: none;
+    }
+}

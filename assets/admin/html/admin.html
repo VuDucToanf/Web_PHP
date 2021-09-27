@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trang chủ admin</title>
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="../css/style_admin.css">
+</head>
+<body>
+<div class="main">
+	<div class="sidebar">
+		<div class="logo">
+			<img src="../images/unlimites.png">
+			Modular Admin
+		</div>
+		<div class="menu_sidebar">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#dashboard">Dashboard</a>
+				</li>
+				<li>
+					<a href="#table">Tables</a>
+				</li>
+				<li>
+					<a href="#forms">Forms</a>
+				</li>
+				<li class="menu_page">
+					<a href="#pages">
+						Pages
+						<i class="fas fa-angle-down float-right page_down"></i>
+						<i class="fas fa-angle-up float-right page_up"></i>
+					</a>
+					<div id="pages">
+						<ul>
+							<li>
+								<a href="login.html">Log in</a>
+							</li>
+							<li>
+								<a href="reset.html">Reset</a>
+							</li>
+							<li>
+								<a href="signup.html">Sign up</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="header">
+			<nav class="navbar navbar-light bg-light form_search float-left">
+				<form class="form-inline">
+			    	<input class="form-control mr-sm-2" type="search" placeholder="Nhập từ khóa" aria-label="Search">
+			    	<button type="submit">
+			    		<i class="fas fa-search"></i>
+			    	</button>
+			  	</form>
+			</nav>
+			<div class="account_manage">
+				<button class="btn_account">
+					<img src="../images/usability.png"> Admin 
+					<i class="fas fa-angle-down page_down2"></i>
+					<i class="fas fa-angle-up page_up2"></i>
+					<div class="sub_menu" id="submenu_account">
+						<ul>
+							<li>
+								<a href="#">Profile 
+									<i class="fas fa-user"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">Reset password
+									<i class="fas fa-key"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">Setting
+									<i class="fas fa-cog"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">Logout
+									<i class="fas fa-sign-out-alt"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</button>
+			</div>
+		</div>
+		<div class="container">
+			<h2 class="text-center text-danger" id="dashboard">Dashboard</h2>
+			<div class="stats p-4 mt-5 border rounded">
+				<h3>Stats</h3>
+				<p>Website metrics for your awesome project</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="col-12 mb-5">
+							<div class="title overflow-auto font-weight-bold">
+								<div class="name float-left">
+									<i class="fas fa-sitemap"></i>
+									<span class="ml-5">Active items</span>
+								</div>
+								<div class="percent float-right">5407</div>
+							</div>
+							<div class="progress">
+							  <div class="progress-bar progress-bg" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="col-12 mb-5">
+							<div class="title overflow-auto font-weight-bold">
+								<div class="name float-left">
+									<i class="fas fa-chart-line"></i>
+									<span class="ml-5">Monthly income</span>
+								</div>
+								<div class="percent float-right">$80.560</div>
+							</div>
+							<div class="progress">
+							  <div class="progress-bar progress-bg" role="progressbar" style="width: 55%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="col-12 mb-5">
+							<div class="title overflow-auto font-weight-bold">
+								<div class="name float-left">
+									<i class="fas fa-chart-line"></i>
+									<span class="ml-5">Tickets closed</span>
+								</div>
+								<div class="percent float-right">59</div>
+							</div>
+							<div class="progress">
+							  <div class="progress-bar progress-bg" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="col-12 mb-5">
+							<div class="title overflow-auto font-weight-bold">
+								<div class="name float-left">
+									<i class="fas fa-sitemap"></i>
+									<span class="ml-5">Items sold</span>
+								</div>
+								<div class="percent float-right">78464</div>
+							</div>
+							<div class="progress">
+							  <div class="progress-bar progress-bg" role="progressbar" style="width: 20%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="col-12 mb-5">
+							<div class="title overflow-auto font-weight-bold">
+								<div class="name float-left">
+									<i class="fas fa-chart-line"></i>
+									<span class="ml-5">Total users</span>
+								</div>
+								<div class="percent float-right">359</div>
+							</div>
+							<div class="progress">
+							  <div class="progress-bar progress-bg" role="progressbar" style="width: 35%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="col-12 mb-5">
+							<div class="title overflow-auto font-weight-bold">
+								<div class="name float-left">
+									<i class="fas fa-chart-line"></i>
+									<span class="ml-5">Total income</span>
+								</div>
+								<div class="percent float-right">$780.064</div>
+							</div>
+							<div class="progress">
+							  <div class="progress-bar progress-bg" role="progressbar" style="width: 15%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tables mt-5" id="table">
+				<h2 class="text-center text-danger">Tables</h2>
+				<div class="row d-flex justify-content-around">
+					<div class="col-xs-12 col-sm-10 col-xl-5 border rounded bg-light pt-4 pl-4 pr-4">
+						<h4>Basic example</h4>
+						<p>When blocks aren't enough</p>
+						<table class="table mt-3">
+						  	<thead>
+						    	<tr>
+						      		<th scope="col">#</th>
+						      		<th scope="col">First</th>
+						      		<th scope="col">Last</th>
+						      		<th scope="col">Handle</th>
+						    	</tr>
+						  	</thead>
+						  	<tbody>
+							    <tr>
+							      	<th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							    </tr>
+						  	</tbody>
+						</table>
+					</div>
+					<div class="col-xs-12 col-sm-10 col-xl-5 border rounded bg-light pt-4 pl-4 pr-4">
+						<h4>Basic example</h4>
+						<p>When blocks aren't enough</p>
+						<table class="table mt-3">
+						  	<thead>
+						    	<tr>
+						      		<th scope="col">#</th>
+						      		<th scope="col">First</th>
+						      		<th scope="col">Last</th>
+						      		<th scope="col">Handle</th>
+						    	</tr>
+						  	</thead>
+						  	<tbody>
+							    <tr>
+							      	<th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							    </tr>
+						  	</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-around mt-3">
+					<div class="col-xs-12 col-sm-10 col-xl-5 border rounded bg-light pt-4 pl-4 pr-4">
+						<h4>Basic example</h4>
+						<p>When blocks aren't enough</p>
+						<table class="table mt-3">
+						  	<thead>
+						    	<tr>
+						      		<th scope="col">#</th>
+						      		<th scope="col">First</th>
+						      		<th scope="col">Last</th>
+						      		<th scope="col">Handle</th>
+						    	</tr>
+						  	</thead>
+						  	<tbody>
+							    <tr>
+							      	<th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							    </tr>
+						  	</tbody>
+						</table>
+					</div>
+					<div class="col-xs-12 col-sm-10 col-xl-5 border rounded bg-light pt-4 pl-4 pr-4">
+						<h4>Basic example</h4>
+						<p>When blocks aren't enough</p>
+						<table class="table mt-3">
+						  	<thead>
+						    	<tr>
+						      		<th scope="col">#</th>
+						      		<th scope="col">First</th>
+						      		<th scope="col">Last</th>
+						      		<th scope="col">Handle</th>
+						    	</tr>
+						  	</thead>
+						  	<tbody>
+							    <tr>
+							      	<th scope="row">1</th>
+								    <td>Mark</td>
+								    <td>Otto</td>
+								    <td>@mdo</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">2</th>
+							      	<td>Jacob</td>
+							      	<td>Thornton</td>
+							      	<td>@fat</td>
+							    </tr>
+							    <tr>
+							      	<th scope="row">3</th>
+							      	<td>Larry</td>
+							      	<td>the Bird</td>
+							      	<td>@twitter</td>
+							    </tr>
+						  	</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<h2 class="text-center text-danger mt-5" id="forms">Forms</h2>
+			<div class="content_form row d-flex justify-content-around">
+				<div class="col-7 bg-light border rounded">
+					<h2>Sign up form</h2>
+					<form action="/action_page.php">
+						<div class="form-group">
+				      		<label for="text">Fullname:</label>
+				      		<input type="text" class="form-control" id="fullname" placeholder="Enter your fullname" name="name">
+				    	</div>
+				    	<div class="form-group">
+				      		<label for="email">Account:</label>
+				      		<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				    	</div>
+				    	<div class="form-group">
+				      		<label for="pwd">Password:</label>
+				     	 	<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+				    	</div>
+				    	<div class="form-group">
+				      		<label for="pwd">Password:</label>
+				     	 	<input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+				    	</div>
+					</form>
+				</div>
+				<div class="col-4 bg-light border rounded">
+					<h2>Vertical form</h2>
+					<form action="/action_page.php">
+						<div class="form-group">
+				      		<label for="text">Gender:</label>
+				      		<div class="row d-flex justify-content-around">
+					      		<div class="col-12 col-xl-4" style="white-space: nowrap;"><input type="radio" name="gender" value="1" checked="checked">Male</div>
+					      		<div class="col-12 col-xl-4" style="white-space: nowrap;"><input type="radio" name="gender" value="2">Female</div>
+					      		<div class="col-12 col-xl-4" style="white-space: nowrap;"><input type="radio" name="gender" value="3">Different</div>
+				      		</div>
+				    	</div>
+				    	<div class="form-group">
+				      		<label>Checkbox</label>
+				      		<div><input type="checkbox" name="remember"> Check 1</div>
+				      		<div><input type="checkbox" name="remember"> Check 2</div>
+				      		<div><input type="checkbox" name="remember"> Check 3</div>
+				      		<div><input type="checkbox" name="remember"> Check 4</div>
+				      		<div><input type="checkbox" name="remember"> Check 5</div>
+				    	</div>
+				    	<div class="form-group">
+				    		<label>Selection</label>
+				    		<select class="custom-select custom-select-sm">
+							  	<option selected>Open this select menu</option>
+							  	<option value="1">One</option>
+							  	<option value="2">Two</option>
+							  	<option value="3">Three</option>
+							</select>
+				    	</div>
+					</form>
+				</div>
+				<div class="col-12 ml-4">
+					<form action="/action_page.php">
+						<div class="checkbox">
+							<label><input type="checkbox"> Remember me</label>
+						</div>
+						<button type="submit" class="btn btn-success">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer bg-dark">
+			<div class="row">
+				<div class="col-6 col-lg-3 pt-3">
+					<ul class=" d-flex justify-content-around">
+						<li><a href="#"><img src="../images/facebook.png"></a></li>
+						<li><a href="#"><img src="../images/instagram.png"></a></li>
+						<li><a href="#"><img src="../images/twitter.png"></a></li>
+					</ul>
+				</div>
+				<div class="col-8 pt-3">
+					<p class="text-white text-center" style="font-size: 16px; white-space: nowrap; width: 100%; text-align: center;">&copy; 2016 All rights reserved. Weather App Theme by Gravpix</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/script_admin.js"></script>
+</html>
