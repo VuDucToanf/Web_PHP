@@ -1,4 +1,4 @@
-<?php 
+<?php
 	//load file Layout.php vào đây
 	$this->fileLayout = "LayoutTrangTrong.php";
  ?>
@@ -21,7 +21,7 @@
         <div class="col-12">
             <div class="row">
                 <div class="col-5">
-                    <img src="assets/upload/products/<?php echo $record->photo; ?>" width="300">
+                    <img src="http://dev.doan.vn/assets/upload/products/<?php echo $record->photo; ?>" width="300">
                 </div>
                 <div class="col-7">
                     <h3>Váy nữ Hàn Quốc</h3>
@@ -77,23 +77,23 @@
                         <h4 style="padding-left: 10px;">Rating</h4>
                         <table style="width: 100%;">
                         <tr>
-                            <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"></td>
+                            <td style="width: 80%; padding-left: 10px;"><img src="http://dev.doan.vn/assets/frontend/images/star.jpg"></td>
                             <td><span class="label label-primary"><?php echo $this->modelGetStar($record->id,1); ?> vote</span></td>
                         </tr>
                         <tr>
-                            <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
+                            <td style="width: 80%; padding-left: 10px;"><img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"></td>
                             <td><span class="label label-warning"><?php echo $this->modelGetStar($record->id,2); ?> vote</span></td>
                         </tr>
                         <tr>
-                            <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
+                            <td style="width: 80%; padding-left: 10px;"><img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"></td>
                             <td><span class="label label-danger"><?php echo $this->modelGetStar($record->id,3); ?> vote</span></td>
                         </tr>
                         <tr>
-                            <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
+                            <td style="width: 80%; padding-left: 10px;"><img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"></td>
                             <td><span class="label label-info"><?php echo $this->modelGetStar($record->id,4); ?> vote</span></td>
                         </tr>
                         <tr>
-                            <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
+                            <td style="width: 80%; padding-left: 10px;"><img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"> <img src="http://dev.doan.vn/assets/frontend/images/star.jpg"></td>
                             <td><span class="label label-success"><?php echo $this->modelGetStar($record->id,5); ?> vote</span></td>
                         </tr>
                         </table>
@@ -114,7 +114,7 @@
             <!-- <form method="post" enctype="multipart/form-data" action=""> -->
                 <div class="row d-flex justify-content-between">
                     <div class="col-2">
-                        <img src="assets/frontend/images/customer.jpg" width="100" alt="">
+                        <img src="http://dev.doan.vn/assets/frontend/images/customer.jpg" width="100" alt="">
                         <div><?php echo isset($_SESSION['customer_email']) ?  $_SESSION['customer_email'] : ""?></div>
                     </div>
                     <div class="col-10">
@@ -131,7 +131,7 @@
             <?php foreach ($data as $rows): ?>
             <div class="row mt-2">
                 <div class="col-1">
-                    <img src="assets/frontend/images/customer.jpg" width="40" alt="">
+                    <img src="http://dev.doan.vn/assets/frontend/images/customer.jpg" width="40" alt="">
                 </div>
                 <div class="col-11">
                     <b><?php echo $rows->customer_name; ?>:</b>
@@ -146,7 +146,7 @@
                     <div id="edit<?php echo $id; ?>">
                     <?php if($rows->customer_name == (isset($_SESSION['customer_email']) ? $_SESSION['customer_email'] : "")): ?>
                         <a class="btn text-secondary font-weight-bold" style="font-size: 14px; text-decoration: none;" onclick="editComment(<?php echo $id; ?>)">Edit</a>&nbsp;
-                        <a class="btn text-secondary font-weight-bold" style="font-size: 14px; text-decoration: none;" href="index.php?controller=products&action=deleteComment&id=<?php echo $_GET['id']; ?>&idComment=<?php echo $id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>    
+                        <a class="btn text-secondary font-weight-bold" style="font-size: 14px; text-decoration: none;" href="index.php?controller=products&action=deleteComment&id=<?php echo $_GET['id']; ?>&idComment=<?php echo $id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
                     <?php endif; ?>
                     </div>
                 </div>

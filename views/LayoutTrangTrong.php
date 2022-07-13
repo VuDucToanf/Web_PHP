@@ -102,7 +102,7 @@
                             <p>support@mail.com</p>
                         </div>
                     </div>
-                    <!-- end support online --> 
+                    <!-- end support online -->
                 </div>
                 <div class="row mt-3">
                     <!-- box search -->
@@ -122,7 +122,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- end box search --> 
+                    <!-- end box search -->
                 </div>
                 <div class="row mt-3">
                     <!-- box search -->
@@ -148,7 +148,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- end box search --> 
+                    <!-- end box search -->
                 </div>
             </div>
             <?php echo $this->view; ?>
@@ -249,7 +249,7 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 </body>
-<script src="assets/frontend/js/jquery.min.js"></script>
+<script src="http://dev.doan.vn/assets/frontend/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="assets/frontend/js/script.js"></script>
+<script type="text/javascript" src="http://dev.doan.vn/assets/frontend/js/script.js"></script>
 </html>

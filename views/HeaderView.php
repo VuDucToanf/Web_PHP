@@ -24,14 +24,14 @@
             <div>
                 <div class="user mt-2" style="height: 50px;">
                     <button class="btn_account">
-                        <img src="assets/admin/images/xie.jpg" alt="" width="100" height="30"> &nbsp; 
+                        <img src="assets/admin/images/xie.jpg" alt="" width="100" height="30"> &nbsp;
                         <?php echo $_SESSION['customer_email']; ?>
                         <i class="fas fa-angle-down page_down2" style="font-size: 10px;"></i>
                         <i class="fas fa-angle-up page_up2" style="font-size: 10px;"></i>
                         <div class="sub_menu" id="submenu_account">
                             <ul>
                                 <li>
-                                    <a href="#">Profile 
+                                    <a href="#">Profile
                                         <i class="fas fa-user"></i>
                                     </a>
                                 </li>
@@ -56,13 +56,13 @@
                 </div>
                 <div class="notification mt-2">
                     <button class="btn_notify">
-                        <i class="fas fa-bell"></i> &nbsp; 
+                        <i class="fas fa-bell"></i> &nbsp;
                         <i class="fas fa-angle-down page_down" style="font-size: 10px;"></i>
                         <i class="fas fa-angle-up page_up" style="font-size: 10px;"></i>
                         <div class="menu_notify" id="menu_notify">
                             <ul>
                                 <li>
-                                    <a href="#">New Messages 
+                                    <a href="#">New Messages
                                         <i class="fas fa-sms"></i>
                                     </a>
                                 </li>
@@ -89,22 +89,22 @@
                 </a>
                 <a href="index.php?controller=account&action=register" class="text-dark" style="display: block; height: 35px; text-decoration: none">
                     Đăng ký
-                </a> 
+                </a>
             </div>
         <?php endif; ?>
-        <?php 
+        <?php
             $ProductNumberInCart = 0;
             if(isset($_SESSION['cart']) != NULL)
             foreach($_SESSION['cart'] as $product)
                 $ProductNumberInCart++;
         ?>
         <div class="col-sm-2 col-md-2 col-lg-1 mt-md-3 mt-lg-1">
-            <div class="wrapper-mini-cart pb-2"> 
+            <div class="wrapper-mini-cart pb-2">
                 <span id="cart">
                     <i class="fa fa-shopping-cart"></i>
-                </span> 
+                </span>
                 <br>
-                <a href="cart" style="font-size: 10px;"> 
+                <a href="cart" style="font-size: 10px;">
                     <span class="mini-cart-count"> <?php echo $ProductNumberInCart; ?> </span> sản phẩm
                 </a>
                 <div class="content-mini-cart border border-info text-center">
@@ -113,10 +113,10 @@
                             <?php if(isset($_SESSION['cart'])): ?>
                                 <?php foreach($_SESSION['cart'] as $product): ?>
                                 <li class="clearfix d-flex justify-content-between mt-2" id="item-1853038">
-                                    <div class="image ml-1"> 
-                                        <a href="index.php?controller=products&action=detail&id=<?php echo $product["id"]; ?>"> 
-                                            <img style="width: 100px" alt="<?php echo $product["name"]; ?>" src="assets/upload/products/<?php echo $product["photo"]; ?>" title="<?php echo $product["name"]; ?>" class="img-responsive"> 
-                                        </a> 
+                                    <div class="image ml-1">
+                                        <a href="index.php?controller=products&action=detail&id=<?php echo $product["id"]; ?>">
+                                            <img style="width: 100px" alt="<?php echo $product["name"]; ?>" src="http://dev.doan.vn/assets/upload/products/<?php echo $product["photo"]; ?>" title="<?php echo $product["name"]; ?>" class="img-responsive">
+                                        </a>
                                     </div>
                                     <div class="info text-left ml-2">
                                         <h3>
@@ -127,10 +127,10 @@
                                             ₫
                                         </p>
                                     </div>
-                                    <div> 
-                                        <a href="index.php?controller=cart&action=delete&id=<?php echo $product["id"]; ?>"> 
+                                    <div>
+                                        <a href="index.php?controller=cart&action=delete&id=<?php echo $product["id"]; ?>">
                                             <i class="fa fa-times text-danger mr-1"></i>
-                                        </a> 
+                                        </a>
                                     </div>
                                 </li>
                                 <?php endforeach; ?>
@@ -140,7 +140,7 @@
                         <?php if(isset($_SESSION['cart'])): ?>
                         <a href="index.php?controller=cart&action=checkout" class="btn btn-success mb-2">
                             Thanh toán
-                        </a> 
+                        </a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -154,17 +154,17 @@
             <div class="col-3 py-1 active">
                 <div id="cha" class="text-uppercase fw-bolder">
                     <span class="title">
-                        <i class="fas fa-bars"></i> 
+                        <i class="fas fa-bars"></i>
                         Danh mục sản phẩm
                     </span>
                     <ul id="danhmuc">
-                        <?php 
+                        <?php
                             $categoriesP = $this->modelCategoriesParentHome();
                         ?>
                         <?php foreach($categoriesP as $itemCategoriesP): ?>
                         <li class="menu1"><a href="products/category/<?php echo $itemCategoriesP->id; ?>/<?php echo $itemCategoriesP->name; ?>" class="title text-uppercase fw-bolder p-3"><?php echo $itemCategoriesP->name; ?></a>
                             <ul class="menu1_2">
-                                <?php 
+                                <?php
                                     $categoriesSub = $this->modelCategoriesSub($itemCategoriesP->id);
                                 ?>
                                 <?php foreach($categoriesSub as $rowsSub): ?>
@@ -187,7 +187,7 @@
             </div>
         </div>
         <div class="row" id="img_banner">
-            <img src="assets/frontend/images/banner/banner.jpg" height="312" width="850">
+            <img src="http://dev.doan.vn/assets/frontend/images/banner/banner.jpg" height="312" width="850">
         </div>
     </div>
 </div>

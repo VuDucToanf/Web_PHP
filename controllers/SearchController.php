@@ -1,4 +1,4 @@
-<?php 
+<?php
 	//include file model vào đây
 	include "models/SearchModel.php";
 	class SearchController extends Controller{
@@ -19,7 +19,7 @@
 			$data = $this->modelAjaxSearch();
 			$strResult = "";
 			foreach($data as $rows){
-				$strResult = $strResult."<li><img src='assets/upload/products/{$rows->photo}'> <a href='index.php?controller=products&action=detail&id={$rows->id}'>{$rows->name}</a></li>";
+				$strResult = $strResult."<li><img src='http://dev.doan.vn/assets/upload/products/{$rows->photo}'> <a href='index.php?controller=products&action=detail&id={$rows->id}'>{$rows->name}</a></li>";
 			}
 			echo $strResult;
 		}

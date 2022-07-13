@@ -1,4 +1,4 @@
-<?php 
+<?php
 	//load file LayoutTrangChu.php
 	$this->fileLayout= "LayoutTrangTrong.php";
  ?>
@@ -16,9 +16,9 @@
             </tr>
         </thead>
         <?php foreach($_SESSION["cart"] as $product): ?>
-        <tbody>                  
+        <tbody>
             <tr>
-                <td><img src="assets/upload/products/<?php echo $product["photo"]; ?>" class="img-responsive" style="width: 80px;"/></td>
+                <td><img src="http://dev.doan.vn/assets/upload/products/<?php echo $product["photo"]; ?>" class="img-responsive" style="width: 80px;"/></td>
                 <td>
                     <a class="text-dark" style="font-size: 14px;" href="index.php?controller=products&action=detail&id=<?php echo $product["id"]; ?>"><?php echo $product["name"]; ?></a>
                 </td>
@@ -35,7 +35,7 @@
                 <td colspan="3">
                     <a href="index.php?controller=cart&action=destroy" class="btn btn-danger">
                         Xóa toàn bộ
-                    </a> 
+                    </a>
                 </td>
                 <td colspan="3" class="text-right">
                     <input type="submit" class="btn btn-success" value="Cập nhật">

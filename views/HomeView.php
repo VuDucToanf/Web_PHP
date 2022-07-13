@@ -20,27 +20,27 @@
                     <div class="discount"><?php echo $rows->discount ?>%</div>
                     <!-- end discount -->
                     <a href="#">
-                        <img    class="sp" src="assets/upload/products/<?php echo $rows->photo; ?>" 
-                                title="<?php echo $rows->name; ?>" 
-                                alt="<?php echo $rows->name; ?>" 
+                        <img    class="sp" src="http://dev.doan.vn/assets/upload/products/<?php echo $rows->photo; ?>"
+                                title="<?php echo $rows->name; ?>"
+                                alt="<?php echo $rows->name; ?>"
                                 height="200">
                     </a>
-                    <p class="price-box"> 
+                    <p class="price-box">
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=1">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=2">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=3">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=4">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=5">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                     </p>
                     <hr>
                     <a href="products/detail/<?php echo $rows->id; ?>/<?php echo $rows->name; ?>" class="text-uppercase name_sp"><?php echo $rows->name; ?></a>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-    <?php 
+    <?php
         $categoriesP = $this->modelCategoriesParent();
     ?>
     <?php foreach($categoriesP as $itemCategoriesP): ?>
@@ -71,7 +71,7 @@
     <div class="row mt-2">
         <div class="col-sm-0 col-md-2 p-0">
             <ul class="danhmuc_sp" style="height: 400px;">
-                <?php 
+                <?php
                     $categoriesSub = $this->modelCategoriesSub($itemCategoriesP->id);
                 ?>
                 <?php foreach($categoriesSub as $rowsSub): ?>
@@ -81,31 +81,31 @@
         </div>
         <div class="col-sm-12 col-md-10">
             <div class="row link-sp">
-                <?php 
+                <?php
                     $products = $this->modelProducts($itemCategoriesP->id);
-                ?>  
+                ?>
                 <?php foreach($products as $rows): ?>
                 <div class="col-sm-6 col-md-3 mt-sm-2 mt-md-0" style="overflow: hidden; height: 400px;">
                     <!-- discount -->
                     <div class="discount"><?php echo $rows->discount ?>%</div>
                     <!-- end discount -->
-                    <a href="#"><img class="sp" src="assets/upload/products/<?php echo $rows->photo; ?>" title="<?php echo $rows->name; ?>" alt="<?php echo $rows->name; ?>" height="200"></a>
-                    <p class="price-box"> 
+                    <a href="#"><img class="sp" src="http://dev.doan.vn/assets/upload/products/<?php echo $rows->photo; ?>" title="<?php echo $rows->name; ?>" alt="<?php echo $rows->name; ?>" height="200"></a>
+                    <p class="price-box">
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=1">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=2">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=3">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=4">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=5">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                     </p>
                     <hr>
                     <a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>" class="text-uppercase name_sp"><?php echo $rows->name; ?></a>
@@ -125,18 +125,18 @@
                 <div class="row border border-info border-top-0 border-right-0 border-left-0">
                     <div class="col-3"><h4 style="margin: 8.5px 0;" class="text-uppercase p-2 px-3 text-success font-weight-bold">Tin tức</h4></div>
                     <div class="col-9 text-right">
-                        <img class="btn-change" id="prev" src="assets/frontend/images/prev.png" alt="" width="30">
-                        <img class="btn-change" id="next" src="assets/frontend/images/next.png" alt="" width="30">
+                        <img class="btn-change" id="prev" src="http://dev.doan.vn/assets/frontend/images/prev.png" alt="" width="30">
+                        <img class="btn-change" id="next" src="http://dev.doan.vn/assets/frontend/images/next.png" alt="" width="30">
                     </div>
                 </div>
                 <div class="row mt-2">
-                    <?php 
+                    <?php
                         $news = $this->modelHotNews();
                         $id = 0;
                     ?>
                     <?php foreach($news as $rows): ?>
                     <div class="col-sm-6 col-md-3 slideNews" idx="<?php echo $id; $id++;?>">
-                        <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id; ?>" class="image"> <img style="height: 200px;" src="assets/upload/news/<?php echo $rows->photo; ?>" alt="<?php echo $rows->name; ?>" title="<?php echo $rows->name; ?>" class="img-responsive"> </a>
+                        <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id; ?>" class="image"> <img style="height: 200px;" src="http://dev.doan.vn/assets/upload/news/<?php echo $rows->photo; ?>" alt="<?php echo $rows->name; ?>" title="<?php echo $rows->name; ?>" class="img-responsive"> </a>
                         <h5><a class="text-info title_news" href="index.php?controller=news&action=detail&id=<?php echo $rows->id; ?>" style="text-decoration: none;"><?php echo $rows->name; ?></a></h5>
                         <span class="desc_news"><?php echo $rows->description; ?></span>
                     </div>

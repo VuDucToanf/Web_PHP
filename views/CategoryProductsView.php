@@ -1,4 +1,4 @@
-<?php 
+<?php
 	//load file Layout.php vào đây
 	$this->fileLayout = "LayoutTrangTrong.php";
  ?>
@@ -17,7 +17,7 @@
         </div>
         <div class="col-7 text-right p-0">
             <div class="col-lg-3 p-0" style="float: right;">
-                <?php 
+                <?php
                     $order = isset($_GET["order"]) ? $_GET["order"] : "";
                  ?>
                 <select class="form-control" onchange="location.href = 'index.php?controller=products&action=category&id=<?php echo $id; ?>&order='+this.value;">
@@ -40,24 +40,24 @@
                     <div class="discount"><?php echo $rows->discount ?>%</div>
                     <!-- end discount -->
                     <a href="#">
-                        <img class="sp" src="assets/upload/products/<?php echo $rows->photo; ?>" title="<?php echo $rows->name; ?>" alt="<?php echo $rows->name; ?>" height="200">
+                        <img class="sp" src="http://dev.doan.vn/assets/upload/products/<?php echo $rows->photo; ?>" title="<?php echo $rows->name; ?>" alt="<?php echo $rows->name; ?>" height="200">
                     </a>
-                    <p class="price-box"> 
+                    <p class="price-box">
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=1">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=2">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=3">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=4">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=5">
-                            <img src="assets/frontend/images/star.jpg">
-                        </a> 
+                            <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
+                        </a>
                     </p>
                     <hr>
                     <a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>" class="text-uppercase"><?php echo $rows->name; ?></a>
@@ -67,7 +67,7 @@
                 </div>
                 <?php endforeach; ?>
                 <!-- end box product -->
-                
+
             </div>
             <!-- paging -->
             <div class="row mt-5">

@@ -12,7 +12,7 @@
 	<!-- bootstrap 4 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<!-- style css -->
-	<link rel="stylesheet" type="text/css" href="assets/frontend/css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://dev.doan.vn/assets/frontend/css/style.css">
 </head>
 <body>
 <?php
@@ -23,21 +23,21 @@
     <div class="container-fluid footer mt-5">
         <div class="container">
             <div class="row pt-3">
-                <?php 
+                <?php
                     $categoriesP = $this->modelCategoriesParentHome();
                 ?>
                 <?php foreach($categoriesP as $itemCategoriesP): ?>
                 <div class="col-2">
                         <a href="index.php?controller=products&action=category&id=<?php echo $itemCategoriesP->id; ?>" class="text-uppercase"><h5><?php echo $itemCategoriesP->name; ?></h5></a>
                     <ul style="list-style-type: circle;">
-                        <?php 
+                        <?php
                             $categoriesSub = $this->modelCategoriesSub($itemCategoriesP->id);
                         ?>
                         <?php foreach($categoriesSub as $rowsSub): ?>
                         <li><a href="index.php?controller=products&action=category&id=<?php echo $rowsSub->id; ?>"><?php echo $rowsSub->name; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
-                    
+
                 </div>
                 <?php endforeach; ?>
             </div>
@@ -86,7 +86,7 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 </body>
-<script src="assets/frontend/js/jquery.min.js"></script>
+<script src="http://dev.doan.vn/assets/frontend/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="assets/frontend/js/script.js"></script>
+<script type="text/javascript" src="http://dev.doan.vn/assets/frontend/js/script.js"></script>
 </html>
