@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <!-- đặt lại đường dẫn root -->
-    <base href="http://localhost/test/">
+    <base href="http://dev.doan.vn">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thời trang nam nữ</title>
+    <title>Điện thoại Tùng Linh</title>
     <!-- fontawesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<!-- bootstrap 4 -->
@@ -28,7 +28,7 @@
                 ?>
                 <?php foreach($categoriesP as $itemCategoriesP): ?>
                 <div class="col-2">
-                        <a href="index.php?controller=products&action=category&id=<?php echo $itemCategoriesP->id; ?>" class="text-uppercase"><h5><?php echo $itemCategoriesP->name; ?></h5></a>
+                        <a href="dev.doan.vnindex.php?controller=products&action=category&id=<?php echo $itemCategoriesP->id; ?>" class="text-uppercase"><h5><?php echo $itemCategoriesP->name; ?></h5></a>
                     <ul style="list-style-type: circle;">
                         <?php
                             $categoriesSub = $this->modelCategoriesSub($itemCategoriesP->id);
@@ -74,15 +74,15 @@
     </div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/613c98dbd326717cb680eb8f/1ffaba75c';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/62cedc19b0d10b6f3e7c2852/1g7s0nhjs';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
 </script>
 <!--End of Tawk.to Script-->
 </body>
