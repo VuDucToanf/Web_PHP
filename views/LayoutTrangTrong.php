@@ -158,80 +158,82 @@
         <div class="container">
             <div class="row pt-3">
                 <div class="col-3">
-                    <a href="#" class="text-uppercase"><h5>Thời trang nữ</h5></a>
+                    <a href="#" class="text-uppercase"><h5>Laptop</h5></a>
                     <ul>
-                        <li><a href="#">&#8226; Đầm váy nữ đẹp</a></li>
-                        <li><a href="#">&#8226; Quần đùi jean nữ ngắn</a></li>
-                        <li><a href="#">&#8226; Bộ đồ nữ mặc nhà</a></li>
-                        <li><a href="#">&#8226; Áo sơ mi nữ đẹp</a></li>
-                        <li><a href="#">&#8226; Quần jean nữ đẹp</a></li>
-                        <li><a href="#">&#8226; Áo khoác nữ đẹp</a></li>
-                        <li><a href="#">&#8226; Áo thun nữ đẹp</a></li>
-                        <li><a href="#">&#8226; Quần thể thao nữ</a></li>
-                        <li><a href="#">&#8226; Quần áo yếm jean nữ đẹp</a></li>
-                        <li><a href="#">&#8226; Áo dài cách tân đẹp</a></li>
+                        <li><a href="#">&#8226; MAC</a></li>
+                        <li><a href="#">&#8226; HP</a></li>
+                        <li><a href="#">&#8226; Dell</a></li>
+                        <li><a href="#">&#8226; Asus</a></li>
+                        <li><a href="#">&#8226; LG</a></li>
+                        <li><a href="#">&#8226; Acer</a></li>
+                        <li><a href="#">&#8226; Huawei</a></li>
+                       
                     </ul>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="text-uppercase"><h5>Thời trang nam</h5></a>
+                    <a href="#" class="text-uppercase"><h5>Điện thoại</h5></a>
                     <ul>
-                        <li><a href="#">&#8226; Áo khoác nam đẹp</a></li>
-                        <li><a href="#">&#8226; Áo sơ mi nam đẹp</a></li>
-                        <li><a href="#">&#8226; Áo thun nam đẹp</a></li>
-                        <li><a href="#">&#8226; Quần jean nam đẹp</a></li>
-                        <li><a href="#">&#8226; Quần đùi short jean nam</a></li>
-                        <li><a href="#">&#8226; Bộ quần áo nam - Đồ bộ nam</a></li>
+                        <li><a href="#">&#8226; Iphone</a></li>
+                        <li><a href="#">&#8226; Oppo</a></li>
+                        <li><a href="#">&#8226; Nokia</a></li>
+                        <li><a href="#">&#8226; Samsung</a></li>
+                        <li><a href="#">&#8226; Xixaomi</a></li>
+                        <li><a href="#">&#8226; Vivo</a></li>
                     </ul>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="text-uppercase"><h5>Giày nữ đẹp</h5></a>
+                    <a href="#" class="text-uppercase"><h5>Đồng hồ</h5></a>
                     <ul>
-                        <li><a href="#">&#8226; Giày thể thao nữ đẹp</a></li>
-                        <li><a href="#">&#8226; Giày cao gót nữ ngắn</a></li>
-                        <li><a href="#">&#8226; Giày dép sandal nữ</a></li>
+                        
                     </ul>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="text-uppercase"><h5>Quần áo cặp đôi</h5></a>
+                    <a href="#" class="text-uppercase"><h5>Phụ kiện</h5></a>
                     <ul>
-                        <li><a href="#">&#8226; Áo khoác cặp đôi nam nữ</a></li>
-                        <li><a href="#">&#8226; Áo thun cặp đôi đẹp</a></li>
-                        <li><a href="#">&#8226; Áo sơ mi cặp đôi đẹp</a></li>
+                        <li><a href="#">&#8226; Ốp lưng-Bao da</a></li>
+                        <li><a href="#">&#8226; Phụ kiện Apple</a></li>
+                        <li><a href="#">&#8226; Dán màn hình</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
-                    <a href="#" class="text-uppercase"><h5>Túi xách nữ thời trang</h5></a>
-                    <a href="#" class="text-uppercase"><h5>Kính mát thời trang nam nữ</h5></a>
+                <div class="col-2">
+                    <a href="#" class="text-uppercase"><h5>Âm thanh</h5></a>
+                    <a href="#" class="text-uppercase"><h5>Tivi</h5></a>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-4" style="border-right: 1px solid black">
-                    <h4>Shop Thời trang - Ngày nay</h4>
-                    <p><u>ĐC</u>:9/1A Đăng Văn Bi, Phường Trường Thọ, Quận Thủ Đức, TP.HCM</p>
+                <h4>Laptop-Phụ kiện</h4>
+                    <p><u>ĐC</u>:95 Hoàng Hoa Thám, Phường Liễu Giai, Quận Ba Đình, TP HN</p>
                     <p><u>Mobile</u>:012.6746.1772 - 090.600.647</p>
-                    <p class="text-info"><b>Email: thoitrangngaynay@gmail.com</b></p>
+                    <p class="text-info"><b>Email: laptopphukien@gmail.com</b></p>
                     <p class="text-primary"><b>Zalo: 01267461772</b></p>
                     <p><b>Thời gian làm việc:</b></p>
                     <p>Thứ 2 - Chủ nhật: <br>
                         Sáng: 08h - 12h <br>
                         Chiều: 13h - 23h</p>
                 </div>
-                <div class="col-3" style="border-right: 1px solid black">
-                    <h4>HỖ TRỢ KHÁCH HÀNG</h4>
-                    <p><a href="">Hướng dẫn mua hàng</a></p>
-                    <p><a href="">Thời trang quần áo giá sỉ rẻ</a></p>
-                    <p><a href="">Phương thức thanh toán</a></p>
-                    <p><a href="">Cách đo size sản phẩm</a></p>
-                    <p><a href="">Phí giao hàng</a></p>
+                <div class="col-2" style="border-right: 1px solid black">
+                    <h4>Phụ kiện-Nhà thông minh</h4>
+                    <p><a href="">Camera-Camera hành trình</a></p>
+                    <p><a href="">Tai nghe blutooth</a></p>
+                    <p><a href="">Bàn ghế học thông thái</a></p>
+                    
                 </div>
-                <div class="col-3" style="border-right: 1px solid black">
+                <div class="col-2" style="border-right: 1px solid black">
                     <h4>DANH MỤC</h4>
                     <p><a href="">Trang chủ</a></p>
                     <p><a href="">Tin tức</a></p>
                     <p><a href="">Khuyến mãi</a></p>
                     <p><a href="">Liên hệ</a></p>
                 </div>
+                <div class="col-2" style="border-right: 1px solid black">
+                    <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                    <p><a href="">Hướng dẫn mua hàng</a></p>
+                    <p><a href="">Laptop giá sỉ rẻ</a></p>
+                    <p><a href="">Phương thức thanh toán</a></p>
+                    <p><a href="">Cách mua sản phẩm</a></p>
+                    <p><a href="">Phí giao hàng</a></p>
             </div>
         </div>
     </div>

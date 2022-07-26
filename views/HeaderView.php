@@ -1,11 +1,12 @@
 <div class="container mt-2">
     <div class="row px-0 d-flex justify-content-around m-0" style="width: 100%">
         <div class="col-sm-2 col-md-2 col-lg-1 p-0 mt-lg-1">
-            <a href="home" style="display: block;"><i class="fas fa-tshirt" id="logo"></i>
-                <p id="logo1" class="text-info">Thời trang</p>
+            <a href="home" style="display: block;"><i class=" fas fa-home" id="logo"></i>
+                <p id="logo1" class="text-info">Trang chủ</p>
             </a>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-6 p-0 mt-md-3 mt-lg-3">
+            
             <div>
                 <form>
                     <input class="p-1 border border-danger input-control" type="text" name="search" id="key" placeholder="Từ khóa tìm kiếm..." autocomplete="off">

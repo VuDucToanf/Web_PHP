@@ -58,10 +58,10 @@
                             <span class="checkmark"></span>
                         </label>
                     </form>
-                    <p class="font-weight-bold">Màu sắc:</p>
+                    <p class="font-weight-bold">Chọn màu sắc:</p>
                     <form action="">
-                        <input type="checkbox"> Xanh dương
-                        <input type="checkbox"> Đen jeans
+                        <input type="checkbox"> Đen     
+                        <input type="checkbox"> Trắng
                     </form>
                     <span class="new_price font-weight-bold"><?php echo number_format($record->price - $record->price * $record->discount/100); ?><sup>đ</sup></span>
                     <span class="old_price"><?php echo number_format($record->price); ?></span>

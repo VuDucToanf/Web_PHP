@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Điện thoại Tùng Linh</title>
+    <title>Laptop Tùng Linh</title>
     <!-- fontawesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<!-- bootstrap 4 -->
@@ -43,46 +43,53 @@
             </div>
             <hr>
             <div class="row">
-                <div class="col-4" style="border-right: 1px solid black">
-                    <h4>Shop Thời trang - Ngày nay</h4>
-                    <p><u>ĐC</u>:9/1A Đăng Văn Bi, Phường Trường Thọ, Quận Thủ Đức, TP.HCM</p>
+                <div class="col-5" style="border-right: 1px solid black">
+                    <h4>Laptop-Phụ kiện</h4>
+                    <p><u>ĐC</u>:95 Hoàng Hoa Thám, Phường Liễu Giai, Quận Ba Đình, TP HN</p>
                     <p><u>Mobile</u>:012.6746.1772 - 090.600.647</p>
-                    <p class="text-info"><b>Email: thoitrangngaynay@gmail.com</b></p>
+                    <p class="text-info"><b>Email: laptopphukien@gmail.com</b></p>
                     <p class="text-primary"><b>Zalo: 01267461772</b></p>
                     <p><b>Thời gian làm việc:</b></p>
                     <p>Thứ 2 - Chủ nhật: <br>
                         Sáng: 08h - 12h <br>
                         Chiều: 13h - 23h</p>
                 </div>
-                <div class="col-3" style="border-right: 1px solid black">
-                    <h4>HỖ TRỢ KHÁCH HÀNG</h4>
-                    <p><a href="">Hướng dẫn mua hàng</a></p>
-                    <p><a href="">Thời trang quần áo giá sỉ rẻ</a></p>
-                    <p><a href="">Phương thức thanh toán</a></p>
-                    <p><a href="">Cách đo size sản phẩm</a></p>
-                    <p><a href="">Phí giao hàng</a></p>
+                <div class="col-2" style="border-right: 1px solid black">
+                    <h4>Phụ kiện-Nhà thông minh</h4>
+                    <p><a href="">Camera-Camera hành trình</a></p>
+                    <p><a href="">Tai nghe blutooth</a></p>
+                    <p><a href="">Bàn ghế học thông thái</a></p>
+                    
                 </div>
-                <div class="col-3" style="border-right: 1px solid black">
+                <div class="col-2" style="border-right: 1px solid black">
                     <h4>DANH MỤC</h4>
                     <p><a href="">Trang chủ</a></p>
                     <p><a href="">Tin tức</a></p>
                     <p><a href="">Khuyến mãi</a></p>
                     <p><a href="">Liên hệ</a></p>
                 </div>
+                <div class="col-2" style="border-right: 1px solid black">
+                    <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                    <p><a href="">Hướng dẫn mua hàng</a></p>
+                    <p><a href="">Laptop giá sỉ rẻ</a></p>
+                    <p><a href="">Phương thức thanh toán</a></p>
+                    <p><a href="">Cách mua sản phẩm</a></p>
+                    <p><a href="">Phí giao hàng</a></p>
+                </div>
             </div>
         </div>
     </div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/62cedc19b0d10b6f3e7c2852/1g7s0nhjs';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-  })();
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/62cedea07b967b1179995d1e/1g7s1b9mn';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
 <!--End of Tawk.to Script-->
 </body>
