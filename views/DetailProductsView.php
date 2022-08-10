@@ -14,7 +14,9 @@
         </a>
             &rsaquo; &ensp;
         <a href="#" class="text-uppercase" style="color: black;">
-            Váy nữ Hàn Quốc
+            <?php
+                echo isset($record->name) ? $record->name : "";
+            ?>
         </a>
     </div>
     <div class="row mt-3">
@@ -24,55 +26,26 @@
                     <img src="http://dev.doan.vn/assets/upload/products/<?php echo $record->photo; ?>" width="300">
                 </div>
                 <div class="col-7">
-                    <h3>Váy nữ Hàn Quốc</h3>
+                    <h3>
+                        <?php
+                        echo isset($record->name) ? $record->name : "";
+                        ?>
+                    </h3>
                     <p>Trạng thái: <span class=" font-weight-bold">Còn hàng</span></p>
-                    <p><span class="font-weight-bold">Chất liệu:</span> Vải jeans 100% dày dặn, không bao giãn</p>
-                    <p class="font-weight-bold">Kích thước:</p>
-                    <form action="" class="d-flex justify-content-between">
-                        <label class="form_radio">26
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="form_radio">27
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="form_radio">28
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="form_radio">29
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="form_radio">30
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="form_radio">31
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="form_radio">32
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                    </form>
-                    <p class="font-weight-bold">Chọn màu sắc:</p>
-                    <form action="">
-                        <input type="checkbox"> Đen     
-                        <input type="checkbox"> Trắng
-                    </form>
                     <span class="new_price font-weight-bold"><?php echo number_format($record->price - $record->price * $record->discount/100); ?><sup>đ</sup></span>
                     <span class="old_price"><?php echo number_format($record->price); ?></span>
                     <hr>
-                    <input type="text" value="1" class="border border-info p-2 text-center" style="width: 100px;">
-                    <input type="button" value="+" class="p-2 border border-light" style="width: 30px;">
-                    <input type="button" value="-" class="p-2 border border-light" style="width: 30px;">
+                    <input type="button" value="-" inc="-1" field='targetField1'
+                           class="qtyChange overflow-hidden relative bg-slate-200 border border-inherit px-2 cursor-pointer text-xl">
+                    <input type="text"
+                           class="qty text-center" style="width: 40px;"
+                           step="1" minValue="1" maxValue="10" name="targetField1" value="1"
+                           title="SL" size="4" placeholder="" inputmode="numeric">
+                    <input type="button" value="+" inc="+1" field='targetField1'
+                           class="qtyChange overflow-hidden relative bg-slate-200 border border-inherit px-2 cursor-pointer text-xl">
                     <i>(Chọn số lượng)</i>
                     <br>
-                    <input type="button" value="MUA NGAY" class="btn btn-warning mt-2">
-                    <input type="button" value="Thêm vào giỏ" class="btn btn-success mt-2">
+                    <a href="index.php?controller=cart&action=create&id=<?php echo $id; ?>&quantity=1" class="btn btn-success mt-2 btn_addToCart">Thêm vào giỏ</a>
                     <div style="border:1px solid #dddddd; margin-top: 15px;">
                         <h4 style="padding-left: 10px;">Rating</h4>
                         <table style="width: 100%;">
@@ -155,7 +128,28 @@
         </div>
     </div>
     <!-- /comments -->
+    <script src="http://dev.doan.vn/assets/frontend/js/jquery.min.js"></script>
     <script type="text/javascript">
+      $(document).ready(function(){
+        $(".qtyChange").click(function(e) {
+          e.preventDefault();
+          $(".update_cart").removeClass('opacity-60');
+          var fieldName = $(this).attr('field');
+          var inc = parseInt($(this).attr('inc'));
+          var target = $('input[name=' + fieldName + ']');
+          var val = parseInt(target.val());
+          var min = parseInt(target.attr('minValue')) || 0;
+          var max = parseInt(target.attr('maxValue'));
+          val = val + inc;
+          if (val > max) val = max;
+          if (val < min) val = min;
+          target.val(val);
+          console.log(val);
+          var link = $('.btn_addToCart').attr('href');
+          var quantity = link.split("&")[3].split('=')[1];
+          console.log(quantity);
+        })
+      });
         function editComment(id){
             document.getElementById("description" + id).setAttribute('style', 'display: none');
             document.getElementById('edit' + id).setAttribute('style', 'display: none');

@@ -1,6 +1,6 @@
 <?php
-	trait CartModel{		
-		public function cartAdd($id){
+	trait CartModel{
+		public function cartAdd($id, $quantity){
 		    if(isset($_SESSION['cart'][$id])){
 		        //nếu đã có sp trong giỏ hàng thì số lượng lên 1
 		        $_SESSION['cart'][$id]['number']++;
@@ -14,12 +14,12 @@
 		        $query->setFetchMode(PDO::FETCH_OBJ);
 		        $product = $query->fetch();
 		        //---
-		        
+
 		        $_SESSION['cart'][$id] = array(
 		            'id' => $id,
 		            'name' => $product->name,
 		            'photo' => $product->photo,
-		            'number' => 1,
+		            'number' => $quantity > 0 ? $quantity : 1,
 		            'price' => $product->price,
 		            'discount' => $product->discount
 		        );
@@ -40,7 +40,7 @@
 		        $query->setFetchMode(PDO::FETCH_OBJ);
 		        $product = $query->fetch();
 		        //---
-		        
+
 		        $_SESSION['cart'][$id] = array(
 		            'id' => $id,
 		            'name' => $product->name,
@@ -106,7 +106,7 @@
 		//=============
 		//checkout
 		public function cartCheckOut(){
-			$conn = Connection::getInstance();			
+			$conn = Connection::getInstance();
 			//lay id vua moi insert
 			$customer_id = $_SESSION["customer_id"];
 			//---
@@ -128,7 +128,7 @@
 			unset($_SESSION["cart"]);
 		}
 		//=============
-        
+
         //lấy các danh mục cha Home
 		public function modelCategoriesParentHome(){
 			$conn = Connection::getInstance();
@@ -143,5 +143,5 @@
 			//trả về tất cả các kết quả lấy được
 			return $query->fetchAll();
 		}
-	}	
+	}
 ?>

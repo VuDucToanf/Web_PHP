@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include "models/CartModel.php";
 	class CartController extends Controller{
 		use CartModel;
@@ -15,8 +15,9 @@
 		//thêm sản phẩm vào giỏ hàng
 		public function create(){
 			$id = isset($_GET["id"]) ? $_GET['id'] : 0;
+            $quantity = isset($_GET["quantity"]) ? $_GET["quantity"] : 0;
 			//gọi hàm trong model
-			$this->cartAdd($id);
+			$this->cartAdd($id, $quantity);
 			header("location:index.php?controller=cart");
 		}
 		//xóa sản phẩm khỏi giỏ hàng
@@ -51,6 +52,13 @@
 				$this->cartCheckOut();
 				header("location:index.php?controller=cart");
 			}
+		}
+
+		public function store()
+		{
+			echo '<pre>';
+			print_r($_GET);
+			echo '</pre>';die;
 		}
 	}
  ?>
