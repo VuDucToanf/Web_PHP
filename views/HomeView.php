@@ -19,7 +19,7 @@
                     <!-- discount -->
                     <div class="discount"><?php echo $rows->discount ?>%</div>
                     <!-- end discount -->
-                    <a href="#">
+                    <a href="products/detail/<?php echo $rows->id; ?>/<?php echo $rows->name; ?>">
                         <img    class="sp" src="http://dev.doan.vn/assets/upload/products/<?php echo $rows->photo; ?>"
                                 title="<?php echo $rows->name; ?>"
                                 alt="<?php echo $rows->name; ?>"
@@ -89,7 +89,7 @@
                     <!-- discount -->
                     <div class="discount"><?php echo $rows->discount ?>%</div>
                     <!-- end discount -->
-                    <a href="#"><img class="sp" src="http://dev.doan.vn/assets/upload/products/<?php echo $rows->photo; ?>" title="<?php echo $rows->name; ?>" alt="<?php echo $rows->name; ?>" height="200"></a>
+                    <a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>"><img class="sp" src="http://dev.doan.vn/assets/upload/products/<?php echo $rows->photo; ?>" title="<?php echo $rows->name; ?>" alt="<?php echo $rows->name; ?>" height="200"></a>
                     <p class="price-box">
                         <a href="index.php?controller=products&action=rating&id=<?php echo $rows->id; ?>&star=1">
                             <img src="http://dev.doan.vn/assets/frontend/images/star.jpg">
