@@ -52,7 +52,7 @@
         <?php if($this->cartNumber() > 0): ?>
         <div class="text-uppercase font-weight-bold"> Tổng tiền thanh toán:
         <?php echo number_format($this->cartTotal()); ?>₫ <br>
-        <a href="index.php?controller=cart&action=checkout" class="btn btn-info text-light">Thanh toán</a> </div>
+        <a href="index.php?controller=payment" class="btn btn-info text-light">Thanh toán</a> </div>
         <?php endif; ?>
     </div>
 </div>

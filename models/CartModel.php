@@ -109,13 +109,17 @@
 			$conn = Connection::getInstance();
 			//lay id vua moi insert
 			$customer_id = $_SESSION["customer_id"];
+			$name = isset($_POST['name']) ? $_POST['name'] : '';
+			$address = isset($_POST['address']) ? $_POST['address'] : '';
+			$email = isset($_POST['email']) ? $_POST['email'] : '';
+			$phone = isset($_POST['phone']) ? $_POST['phone'] : '';
 			//---
 			//---
 			//insert ban ghi vao orders, lay order_id vua moi insert
 			//lay tong gia cua gio hang
 			$price = $this->cartTotal();
-			$query = $conn->prepare("insert into orders set customer_id=:customer_id, date=now(),price=:price");
-			$query->execute(array("customer_id"=>$customer_id,"price"=>$price));
+			$query = $conn->prepare("insert into orders set customer_id=:customer_id, date=now(),price=:price, name=:name, address=:address, email=:email, phone=:phone");
+			$query->execute(array("customer_id"=>$customer_id,"price"=>$price, "name"=>$name, "address"=>$address, "email"=>$email, "phone"=>$phone));
 			//lay id vua moi insert
 			$order_id = $conn->lastInsertId();
 			//---

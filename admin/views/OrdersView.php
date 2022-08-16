@@ -1,4 +1,4 @@
-<?php 
+<?php
     //load file Layout.php vao day
     $this->fileLayout = "Layout.php";
  ?>
@@ -17,13 +17,13 @@
                     <th style="width:200px;"></th>
                 </tr>
                 <?php foreach ($data as $rows): ?>
-                <?php 
+                <?php
                 	$customer = $this->modelGetCustomer($rows->customer_id);
                  ?>
                 <tr>
-                    <td><?php echo isset($customer->name)?$customer->name:""; ?></td>
-                    <td><?php echo isset($customer->address)?$customer->address:""; ?></td>
-                    <td><?php echo isset($customer->phone)?$customer->phone:""; ?></td>
+                    <td><?php echo isset($rows->name)?$rows->name:$customer->name; ?></td>
+                    <td><?php echo isset($rows->address)?$rows->address:$customer->address; ?></td>
+                    <td><?php echo isset($rows->phone)?$rows->phone:$customer->phone; ?></td>
                     <td><?php echo date("d/m/Y", strtotime($rows->date)); ?></td>
                     <td><?php echo number_format($rows->price); ?> VNĐ</td>
                     <td>

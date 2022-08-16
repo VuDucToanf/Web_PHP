@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-6 p-0 mt-md-3 mt-lg-3">
-            
+
             <div>
                 <form>
                     <input class="p-1 border border-danger input-control" type="text" name="search" id="key" placeholder="Từ khóa tìm kiếm..." autocomplete="off">
@@ -139,7 +139,7 @@
                         </ul>
                         <hr>
                         <?php if(isset($_SESSION['cart'])): ?>
-                        <a href="index.php?controller=cart&action=checkout" class="btn btn-success mb-2">
+                        <a href="index.php?controller=payment" class="btn btn-success mb-2">
                             Thanh toán
                         </a>
                         <?php endif; ?>
