@@ -160,13 +160,11 @@
                 <div class="col-3">
                     <a href="#" class="text-uppercase"><h5>Laptop</h5></a>
                     <ul>
-                        <li><a href="#">&#8226; MAC</a></li>
-                        <li><a href="#">&#8226; HP</a></li>
-                        <li><a href="#">&#8226; Dell</a></li>
-                        <li><a href="#">&#8226; Asus</a></li>
-                        <li><a href="#">&#8226; LG</a></li>
-                        <li><a href="#">&#8226; Acer</a></li>
-                        <li><a href="#">&#8226; Huawei</a></li>
+                        <li><a href="#">&#8226;Máy tính MAC</a></li>
+                        <li><a href="#">&#8226;Máy tính HP</a></li>
+                        <li><a href="#">&#8226;Máy tính Dell</a></li>
+                        <li><a href="#">&#8226;Máy tính Asus</a></li>
+
                        
                     </ul>
                 </div>
