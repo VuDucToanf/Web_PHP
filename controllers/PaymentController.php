@@ -13,6 +13,8 @@ class PaymentController extends Controller
 
     //hiển thị danh sách các sản phẩm trong giỏ hàng
     public function index(){
+        if(isset($_SESSION["customer_email"]) == false)
+            header("location:index.php?controller=account&action=login");
         $this->loadView("PaymentView.php");
     }
 

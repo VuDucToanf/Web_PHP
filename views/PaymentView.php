@@ -28,7 +28,7 @@ $this->fileLayout= "LayoutTrangTrong.php";
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Số điện thoại</span>
                 </div>
-                <input type="text" name="phone" placeholder="Email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
+                <input type="text" name="phone" placeholder="Số điện thoại" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
             </div>
             <table class="table table-bordered">
                 <thead>
