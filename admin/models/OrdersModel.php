@@ -1,4 +1,4 @@
-<?php 
+<?php
 	trait OrdersModel{
 		//lay ve danh sach cac ban ghi
 		public function modelRead($recordPerPage){
@@ -11,6 +11,36 @@
 			$conn = Connection::getInstance();
 			//thuc hien truy van
 			$query = $conn->query("select * from orders order by id desc limit $from, $recordPerPage");
+			//tra ve nhieu ban ghi
+			return $query->fetchAll();
+		}
+        //tong hop danh sach don hang
+        public function modelReport($recordPerPage, $status){
+            //lay bien page truyen tu url
+            $page = isset($_GET["p"])&& $_GET["p"] > 0 ? $_GET["p"]-1 : 0;
+            //lay tu ban ghi nao
+            $from = $page * $recordPerPage;
+            //---
+            //lay bien ket noi csdl
+            $conn = Connection::getInstance();
+			$query = $conn->query("select * from orders where status = $status group by date limit $from, $recordPerPage");
+			//tra ve nhieu ban ghi
+			return $query->fetchAll();
+        }
+		//chi tiet don hang thanh cong theo ngay
+		public function modelReportDetail($recordPerPage, $date, $status){
+			//lay bien page truyen tu url
+			$page = isset($_GET["p"])&& $_GET["p"] > 0 ? $_GET["p"]-1 : 0;
+			//lay tu ban ghi nao
+			$from = $page * $recordPerPage;
+			//---
+			//lay bien ket noi csdl
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from orders 
+    			inner join orderdetails on orders.id = orderdetails.order_id 
+         		inner join products on orderdetails.product_id = products.id
+         		where orders.status = $status and orders.date = '$date' limit $from, $recordPerPage
+			");
 			//tra ve nhieu ban ghi
 			return $query->fetchAll();
 		}

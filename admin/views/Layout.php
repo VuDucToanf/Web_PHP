@@ -40,13 +40,13 @@
 				<div>
 					<div class="user mt-2" style="height: 50px;">
 						<button class="btn_account">
-							<img src="../assets/admin/images/xie.jpg" alt="" width="100" height="30"> &nbsp; Admin 
+							<img src="../assets/admin/images/xie.jpg" alt="" width="100" height="30"> &nbsp; Admin
 							<i class="fas fa-angle-down page_down2" style="font-size: 10px;"></i>
 							<i class="fas fa-angle-up page_up2" style="font-size: 10px;"></i>
 							<div class="sub_menu" id="submenu_account">
 								<ul>
 									<li>
-										<a href="#">Profile 
+										<a href="#">Profile
 											<i class="fas fa-user"></i>
 										</a>
 									</li>
@@ -71,13 +71,13 @@
 					</div>
 					<div class="notification mt-2">
 						<button class="btn_notify">
-							<i class="fas fa-bell"></i> &nbsp; 
+							<i class="fas fa-bell"></i> &nbsp;
 							<i class="fas fa-angle-down page_down2" style="font-size: 10px;"></i>
 							<i class="fas fa-angle-up page_up2" style="font-size: 10px;"></i>
 							<div class="menu_notify" id="menu_notify">
 								<ul>
 									<li>
-										<a href="#">New Messages 
+										<a href="#">New Messages
 											<i class="fas fa-sms"></i>
 										</a>
 									</li>
@@ -122,6 +122,8 @@
 				<li><a href="index.php?controller=users"><i class="fas fa-users"></i> &nbsp; Quản lý users</a></li>
 				<li><a href="index.php?controller=orders"><i class="fas fa-luggage-cart"></i> &nbsp; Đơn hàng</a></li>
 				<li><a href="index.php?controller=news"><i class="fas fa-newspaper"></i> &nbsp; Tin tức</a></li>
+				<li><a href="index.php?controller=report&status=1"><i class="fas fa-check"></i> &nbsp; Thống kê đơn hàng thành công</a></li>
+				<li><a href="index.php?controller=report&status=0"><i class="fas fa-circle"></i> &nbsp; Thống kê đơn hàng thất bại</a></li>
 			</ul>
 		</div>
 		<div class="content col-10 mx-0 p-2">
