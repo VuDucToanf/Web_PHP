@@ -14,11 +14,23 @@ $this->fileLayout = "Layout.php";
                 }
             ?>
         </div>
+        <label for="" class="mt-3 bg-secondary px-4 text-white">Lọc dữ liệu theo thời gian</label>
+        <form action="index.php" method="get" class="d-flex justify-content-start mb-3">
+            <input type="text" name="controller" value="report" hidden>
+            <input type="text" name="status" value="1" hidden>
+            <input type="date" class="mr-2 px-2" id="date_from" name="date_from">
+            <input type="date" class="mx-2 px-2" id="date_to" name="date_to">
+            <input type="submit" class="mx-2 btn btn-info" value="Xác nhận">
+        </form>
+        <div class="my-3">
+            <label for="">Tổng doanh thu theo bộ lọc: </label> <span class="font-weight-bold"><?php echo !empty($total[0]->total) ? number_format($total[0]->total) : 0; ?> đ</span>
+        </div>
         <div class="panel-body bg-light border border-info rounded-bottom p-3">
             <table class="table table-bordered table-hover">
                 <tr>
                     <th>Ngày thống kê</th>
                     <th>Doanh thu</th>
+                    <th></th>
                 </tr>
                 <?php foreach ($data as $rows): ?>
                     <tr>
@@ -42,3 +54,7 @@ $this->fileLayout = "Layout.php";
         </div>
     </div>
 </div>
+<script>
+document.getElementById("date_from").defaultValue = '<?php echo !empty($_GET['date_from']) ? $_GET['date_from'] : null ?>';
+document.getElementById("date_to").defaultValue = '<?php echo !empty($_GET['date_to']) ? $_GET['date_to'] : null ?>';
+</script>

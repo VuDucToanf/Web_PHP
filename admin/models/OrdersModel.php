@@ -15,7 +15,7 @@
 			return $query->fetchAll();
 		}
         //tong hop danh sach don hang
-        public function modelReport($recordPerPage, $status){
+        public function modelReport($recordPerPage, $status, $date_from = null, $date_to = null){
             //lay bien page truyen tu url
             $page = isset($_GET["p"])&& $_GET["p"] > 0 ? $_GET["p"]-1 : 0;
             //lay tu ban ghi nao
@@ -23,10 +23,24 @@
             //---
             //lay bien ket noi csdl
             $conn = Connection::getInstance();
-			$query = $conn->query("select * from orders where status = $status group by date limit $from, $recordPerPage");
+			if (!empty($date_from) && !empty($date_to)) {
+				$query = $conn->query("select * from orders where status = $status and date >= '$date_from' and date <= '$date_to' limit $from, $recordPerPage");
+			}
+			else {
+				$query = $conn->query("select * from orders where status = $status group by date limit $from, $recordPerPage");
+			}
 			//tra ve nhieu ban ghi
 			return $query->fetchAll();
         }
+		//tong doanh thu
+		public function modelTotal($recordPerPage, $status, $date_from = null, $date_to = null){
+			$conn = Connection::getInstance();
+			if (!empty($date_from) && !empty($date_to)) {
+				$query = $conn->query("select sum(price) as total from orders where status = $status and date >= '$date_from' and date <= '$date_to'");
+				return $query->fetchAll();
+			}
+			return 0;
+		}
 		//chi tiet don hang thanh cong theo ngay
 		public function modelReportDetail($recordPerPage, $date, $status){
 			//lay bien page truyen tu url
